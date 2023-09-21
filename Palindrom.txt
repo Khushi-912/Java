@@ -1,0 +1,25 @@
+import java.util.Scanner;
+class Palindrom {
+    public static void main(String[] args) 
+    {
+        Scanner s=new Scanner(System.in);
+        System.out.println("ENTER THE NUMBER :");
+        int n=s.nextInt();
+        int sum=0,temp,comp;
+        comp=n;
+        while(n!=0)
+        {
+          temp=n%10;
+          sum=sum*10+temp;
+          n=n/10;
+        }
+        if (comp==sum)
+        {
+            System.out.println("Yes");
+        }
+        else
+        {
+           System.out.println("No"); 
+        }
+    }
+}
